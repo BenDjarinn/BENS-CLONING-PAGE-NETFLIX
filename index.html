@@ -44,17 +44,17 @@
   </div>
 
   <div class= "trailer">
-      <video src="https://www.youtube.com/watch?v=SoilLlYfMeQ" controls="true"></video>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/8p9j85zGEqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  controls="true"></iframe>
       <img src="assets/close.png" class="close" onclick="toggleVideo();" >
   </div>
 
   <script>
      function toggleVideo(){
          const trailer = document.querySelector('.trailer');
-         const video = document.querySelector('video');
+         const iframe = document.querySelector('iframe');
          trailer.classList.toggle('active')
-         video.currentTime = 0;
-         video.pause();
+         iframe.currentTime = 0;
+         iframe.pause();
      }
   </script>
 
